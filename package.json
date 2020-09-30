@@ -1,40 +1,47 @@
 {
-  "name": "123",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.js"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "apollo-server-express": "2.17.0",
-    "bcrypt": "5.0.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/user-event": "^12.1.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3",
     "cors": "2.8.5",
     "dotenv": "8.2.0",
     "express": "4.17.1",
     "express-session": "1.17.1",
-    "graphql": "15.3.0",
-    "graphql-depth-limit": "1.1.0",
-    "graphql-iso-date": "3.6.1",
-    "graphql-validation-complexity": "0.4.2",
-    "helmet": "4.1.1",
-    "jsonwebtoken": "8.5.1",
-    "marked": "1.1.1",
-    "md5": "2.3.0",
-    "mongoose": "5.10.5",
-    "nodemon": "2.0.4",
-    "passport": "0.4.1",
-    "passport-github2": "0.1.12"
+    "mongoose": "5.10.7",
+    "nodemon": "2.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "nodemon src/index.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
-    "eslint": "7.9.0",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-prettier": "3.1.4",
-    "faker": "5.1.0",
-    "node-fetch": "2.6.1",
-    "prettier": "2.1.1"
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
   }
 }
